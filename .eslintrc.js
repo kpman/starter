@@ -1,6 +1,6 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['yoctol'],
+  extends: ['yoctol', 'prettier'],
   env: {
     node: true,
     jest: true,
@@ -13,7 +13,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        trailingComma: 'all',
+        trailingComma: 'es5',
         singleQuote: true,
       },
     ],

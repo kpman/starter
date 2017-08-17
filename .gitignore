@@ -1,11 +1,18 @@
-.DS_Store
-
-*.log
-npm-debug.log*
-yarn-error.log*
-
 node_modules
+
+# files
+.DS_Store
+.env
+
+# log
+npm-debug.log
+yarn-error.log
+
+# jest
 coverage
+junit.xml
 jest-report
 
+# build
+lib
 dist
