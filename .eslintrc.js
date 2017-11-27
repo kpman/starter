@@ -1,15 +1,15 @@
 module.exports = {
   parser: 'babel-eslint',
-  extends: ['yoctol', 'prettier'],
+  extends: ['eslint:recommended', 'airbnb-base', 'prettier'],
   env: {
     node: true,
     jest: true,
-    jasmine: true,
   },
   plugins: ['prettier'],
   rules: {
+    'arrow-parens': 'off',
     'consistent-return': 'off',
-    'no-param-reassign': 'off',
+    'global-require': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -17,5 +17,21 @@ module.exports = {
         singleQuote: true,
       },
     ],
+    'prefer-destructuring': 'off',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        'newlines-between': 'always',
+      },
+    ],
+    'no-underscore-dangle': 'off',
   },
 };
