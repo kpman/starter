@@ -32,9 +32,16 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.3.1",
     "jest": "^21.2.1",
+    "lint-staged": "^5.0.0",
     "prettier": "^1.8.2"
   },
   "dependencies": {},
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
